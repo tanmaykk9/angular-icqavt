@@ -11,10 +11,10 @@ export class KeyloggerDirective {
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
     console.log(event);
-     if (event.keyCode === KEY_CODE.RIGHT_ARROW) {
+     if (event.keyCode === KEYCODE.RIGHT_ARROW) {
       console.log("Right Arrow Clicked");
     }
-      if (event.keyCode === KEY_CODE.LEFT_ARROW) {
+      if (event.keyCode === KEYCODE.LEFT_ARROW) {
       console.log("Left arrow Clicked");
     }
   } 
