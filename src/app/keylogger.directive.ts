@@ -1,9 +1,5 @@
 import { Directive, HostListener } from '@angular/core';
-
-export enum KEY_CODE {
-  RIGHT_ARROW = 39,
-  LEFT_ARROW = 37
-}
+import {KEYCODE} from './key-code.enum';
 
 @Directive({
   selector: '[appKeylogger]'
